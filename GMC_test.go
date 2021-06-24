@@ -7,7 +7,7 @@ import (
 )
 
 // TEST CACHE (generic memory cache)
-var test_cache GenericMemoryCache = &CACHE{}
+var test_cache GenericMemoryCache = &cacheLine{}
 
 /* = FORMATTING = */
 
