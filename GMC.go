@@ -161,10 +161,6 @@ func startCleaner(cl *cacheLine, ttl, cUP time.Duration) {
 
 // newACcache()'s subroutine. Creates new default cache line ready to get set to new values.
 func newCacheLine(ttl time.Duration, new_entry map[string]Entry) *cacheLine {
-	if ttl == DefaultExpiration {
-		ttl = NoExpiration
-	}
-
 	cl := &cacheLine{
 		entries: new_entry,
 		ttl:     ttl,
